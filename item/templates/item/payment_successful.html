@@ -1,0 +1,16 @@
+{% extends 'item/base.html' %}
+
+{% comment %} templates/item/payment_successful.html {% endcomment %}
+
+
+{% block title %} Success {% endblock title%}
+{% block content %}
+<div class="alert alert-success" role="alert">
+
+      <h1>Thanks for purchasing our product {{ customer.name }}!</h1>
+  <a
+      href="{% url 'item:item_list' %}"
+      >Go to Products</a
+    >
+</div>
+{% endblock content %}
